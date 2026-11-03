@@ -23,13 +23,13 @@ export default function OurWorkPage() {
 
   const handleNextPhoto = () => {
     if (selectedPhotoIndex !== null) {
-      setSelectedPhotoIndex((prev) => ((prev! + 1) % workGalleryData.length));
+      setSelectedPhotoIndex((prev) => (prev! + 1) % workGalleryData.length);
     }
   };
 
   const handlePrevPhoto = () => {
     if (selectedPhotoIndex !== null) {
-      setSelectedPhotoIndex((prev) => ((prev! - 1 + workGalleryData.length) % workGalleryData.length));
+      setSelectedPhotoIndex((prev) => (prev! - 1 + workGalleryData.length) % workGalleryData.length);
     }
   };
 
@@ -49,8 +49,14 @@ export default function OurWorkPage() {
           </div>
         </section>
 
-        {/* Interactive Before & After Slider */}
-        <BeforeAfterSlider />
+        {/* Interactive Before & After Transformation Slider */}
+        <BeforeAfterSlider
+          id="transformation"
+          title="Surface Transformation"
+          note="Sample transformation visual. Real before and after studio photos will replace this."
+          beforeImage="/work/before-paint.jpg"
+          afterImage="/work/after-paint.jpg"
+        />
 
         {/* Gallery Grid */}
         <section className="py-16 md:py-24">
@@ -88,7 +94,7 @@ export default function OurWorkPage() {
                         src={item.image}
                         alt={item.title}
                         fill
-                        className="object-contain transition-transform duration-300 group-hover:scale-105"
+                        className="object-cover transition-transform duration-300 group-hover:scale-105"
                         sizes="(max-width: 768px) 100vw, 50vw"
                       />
                       {item.isSample && (
@@ -149,4 +155,3 @@ export default function OurWorkPage() {
     </>
   );
 }
-
