@@ -125,6 +125,12 @@ section {
   pointer-events: none;
 }
 
+@media (max-width: 1024px) {
+  .hero::after {
+    display: none;
+  }
+}
+
 .hero .wrap {
   position: relative;
   z-index: 1;
@@ -280,8 +286,8 @@ section {
 }
 
 .wa svg {
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
   fill: #fff;
 }
 
