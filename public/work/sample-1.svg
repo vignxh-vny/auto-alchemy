@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <rect width="800" height="600" fill="#111316"/>
+  <rect x="20" y="20" width="760" height="560" fill="none" stroke="#23262B" stroke-width="2"/>
+  <path d="M100 450 L300 250 L500 380 L700 180" fill="none" stroke="#D6AE48" stroke-width="2" stroke-dasharray="6,6" opacity="0.4"/>
+  <circle cx="400" cy="280" r="80" fill="none" stroke="#D6AE48" stroke-width="1.5" opacity="0.3"/>
+  <text x="400" y="320" font-family="'Barlow Condensed', sans-serif" font-size="28" font-weight="600" fill="#D6AE48" text-anchor="middle" letter-spacing="2">SAMPLE VISUAL</text>
+  <text x="400" y="360" font-family="'DM Sans', sans-serif" font-size="15" fill="#A5A5A5" text-anchor="middle">Ceramic Coating Gloss Prep — Real photos will replace this</text>
+</svg>
+
